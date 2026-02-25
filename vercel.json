@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm ci",
   "outputDirectory": ".output",
-  "installCommand": "npm install",
+  "installCommand": "npm ci",
   "framework": "nuxtjs"
 }
