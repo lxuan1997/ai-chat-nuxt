@@ -23,13 +23,7 @@ export default defineNuxtConfig({
   css: ['~/assets/styles/variables.css', '~/assets/styles/animations.css'],
 
   nitro: {
-    preset: 'vercel',
-    storage: {
-      db: {
-        driver: 'fs',
-        base: './.data/db'
-      }
-    }
+    preset: 'vercel'
   },
 
   routeRules: {
