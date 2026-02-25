@@ -23,7 +23,13 @@ export default defineNuxtConfig({
   css: ['~/assets/styles/variables.css', '~/assets/styles/animations.css'],
 
   nitro: {
-    preset: 'vercel'
+    preset: 'vercel',
+    // 强制 Nitro 在打包时包含这些模块
+    moduleSideEffects: ['anymatch'],
+    // 或者是通过外部扩展强制追踪
+    externals: {
+      traceInclude: ['anymatch']
+    }
   },
 
   routeRules: {
